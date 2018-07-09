@@ -97,6 +97,8 @@
         // No user found, set default username
         ChattyCell.usernameLabel.text = @"🤖";
     }
+    ChattyCell.bubbleView.layer.cornerRadius = 16;
+    ChattyCell.bubbleView.clipsToBounds = true;
     return ChattyCell;
 }
 
